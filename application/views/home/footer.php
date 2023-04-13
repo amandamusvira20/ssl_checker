@@ -6,7 +6,7 @@
   <script src="<?= base_url("assets/vendors/@coreui/chartjs/js/coreui-chartjs.js"); ?>"></script>
   <script src="<?= base_url("assets/vendors/@coreui/utils/js/coreui-utils.js"); ?>"></script>
   <script src="<?= base_url("assets/js/main.js"); ?>"></script>
-  <script>
+  
   </script>
   </body>
 </html>
