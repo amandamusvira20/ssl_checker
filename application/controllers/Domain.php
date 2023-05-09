@@ -13,6 +13,8 @@ class Domain extends CI_Controller
 	public function index()
 	{
 		$data['domain'] = $this->domain_model->all();
-		$this->load->view('home/home', $data);
+		$this->load->view('home/head', $data);
+		$this->load->view('domain/domain', $data);
+		$this->load->view('home/footer', $data);
 	}
 }

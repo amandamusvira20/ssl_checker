@@ -11,8 +11,10 @@
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
     <title>SSL Checker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="<?= base_url("assets/css/style.css"); ?>">
-    <link rel="stylesheet" href="<?= base_url("https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"); ?>">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <link rel="apple-touch-icon" sizes="57x57" href="<?= base_url("assets/favicon/apple-icon-57x57.png"); ?>" >
     <link rel="apple-touch-icon" sizes="60x60" href="<?= base_url("assets/favicon/apple-icon-60x60.png") ; ?>"  >
     <link rel="apple-touch-icon" sizes="72x72" href="<?= base_url("assets/favicon/apple-icon-72x72.png"); ?>" >
@@ -27,20 +29,22 @@
     <link rel="icon" type="image/png" sizes="96x96" href="<?= base_url("assets/favicon/favicon-96x96.png"); ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url("assets/favicon/favicon-16x16.png"); ?>">
     <link rel="manifest" href="<?= base_url("assets/favicon/manifest.json"); ?>">
+    <script src="<?= base_url("assets/js/jquery-3.6.4.min.js"); ?>"></script>
+    <script src="//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
     <!-- assets styles-->
     <link rel="stylesheet" href="<?= base_url("assets/vendors/simplebar/css/simplebar.css"); ?>">
-    <link rel="stylesheet" href="<?= base_url("css/assets/vendors/simplebar.css"); ?>">
+    <link rel="stylesheet" href="<?= base_url("assets/css/vendors/simplebar.css"); ?>">
     <!-- Main styles for this application-->
-    <link href="<?= base_url("css/style.css"); ?>" rel="stylesheet">
+    <link href="<?= base_url("assets/css/style.css"); ?>" rel="stylesheet">
     <!-- We use those styles to show code examples, you should remove them in your application.-->
-    <link rel="stylesheet" href="<?= base_url("https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css"); ?>">
-    <link href="<?= base_url("css/examples.css"); ?>"  rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link href="<?= base_url("assets/css/examples.css"); ?>"  rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="<?= base_url("https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"); ?>"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
 
@@ -53,6 +57,6 @@
       // Bootstrap ID
       gtag('config', 'UA-118965717-5');
     </script>
-    <link href="<?= base_url("assets/vendors/@coreui/chartjs/css/coreui-chartjs.css"); ?>" rel="stylesheet">
+    <link href="<?= base_url("assets/vendors/@coreui/chartjs/css/coreui-chartjs.css"); ?>" rel="stylesheet"> 
   </head>
   <body>
