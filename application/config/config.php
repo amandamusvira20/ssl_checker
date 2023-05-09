@@ -35,7 +35,7 @@ $config['base_url'] = 'http://ssl_checker.test:2022/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

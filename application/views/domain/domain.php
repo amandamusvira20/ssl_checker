@@ -11,7 +11,7 @@
     <li class="nav-item"><a class="nav-link" href="<?= base_url("index.html"); ?>" >
         <svg class="nav-icon">
           <use xlink:href="<?= base_url("assets/vendors/@coreui/icons/svg/free.svg#cil-speedometer") ; ?>"></use>
-        </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+        </svg> Dashboard<span class="badge badge-sm bg-info ms-auto"></span></a></li>
     <li class="nav-title">Master Data</li>
     <li class="nav-item"><a class="nav-link" href="<?= base_url("colors.html"); ?>">
         <svg class="nav-icon">
@@ -97,7 +97,7 @@
     <li class="nav-item"><a class="nav-link" href="<?= base_url("widgets.html"); ?>">
         <svg class="nav-icon">
           <use xlink:href="<?= base_url("assets/vendors/@coreui/icons/svg/free.svg#cil-calculator") ; ?>"></use>
-        </svg> Widgets<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+        </svg> Widgets<span class="badge badge-sm bg-info ms-auto"></span></a></li>
     <li class="nav-divider"></li>
     <li class="nav-title">Extras</li>
     <li class="nav-group"><a class="nav-link nav-group-toggle" href="<?= base_url("#") ; ?>">
@@ -220,50 +220,41 @@
 
             <!-- if breadcrumb is single--><span>Home</span>
           </li>
-          <li class="breadcrumb-item active"><span>Dashboard</span></li>
+          <li class="breadcrumb-item active"><span>Domain</span></li>
         </ol>
       </nav>
     </div>
   </header>
-  <div class="body flex-grow-1 px-3">
-    <div class="container-lg">
-      <div class="row">
-      <section class="section">
-        <div class="container">
-          <table class="table is-narrow" id="tabeldomain">
+  <div class="card">
+    <div class="card-header">
+    <a href="<?= base_url('domain/tambah') ?>" class="btn btn-primary">+ Tambah Data</a>
+</div>
+    <div class="card-body">
+    <table class="table is-narrow" id="tabeldomain">
             <thead>
               <tr>
                 <th>Server ID</th>
                 <th>Domain</th>
                 <th>Active</th> 
+                <th>Aksi</th> 
               </tr>
             </thead>
-            <tbody>
-              <?php
-              foreach ($domain as $d) {
-                echo "<tr>";
-                echo "<td>$d->server_id</td>";
-                echo "<td>$d->domain</td>";
-                echo "<td>$d->active</td>";
-                echo "</tr>";
-              }
-              ?>
-            </tbody>
+            <?php foreach ($domain as $d) : ?>
+              <tbody>
+                <tr>
+	                  <td><?= $d->server_id ?></td>
+	                  <td><?= $d->domain ?></td>
+	                  <td><?= $d->active ?></td>
+	                  <td>
+		                  <a href="" class="btn btn-warning btn-sm">Edit</a>
+		                  <a href="" class="btn btn-danger btn-sm">Delete</a>
+	                  </td>
+                </tr>
+              </tbody>
+            <?php endforeach ?>
           </table>
-        </div>
-      </section>
-
-    </div>
   </div>
-</div>
-<!-- /.col-->
-</div>
-<!-- /.row-->
-</div>
-</div>
-<footer class="footer">
-  <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
-  <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
-</footer>
-</div>
+            </div>
+
 <script>let table = new DataTable('#tabeldomain');</script>
+<script> ('#tabeldomain');</script>

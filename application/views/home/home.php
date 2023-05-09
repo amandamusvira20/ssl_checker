@@ -1,3 +1,4 @@
+<body>
 <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
   <div class="sidebar-brand d-none d-md-flex">
     <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
@@ -11,16 +12,16 @@
     <li class="nav-item"><a class="nav-link" href="<?= base_url("index.html"); ?>" >
         <svg class="nav-icon">
           <use xlink:href="<?= base_url("assets/vendors/@coreui/icons/svg/free.svg#cil-speedometer") ; ?>"></use>
-        </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
-    <li class="nav-title">Theme</li>
+        </svg> Dashboard<span class="badge badge-sm bg-info ms-auto"></span></a></li>
+    <li class="nav-title">Master Data</li>
     <li class="nav-item"><a class="nav-link" href="<?= base_url("colors.html"); ?>">
         <svg class="nav-icon">
           <use xlink:href="<?= base_url("assets/vendors/@coreui/icons/svg/free.svg#cil-drop"); ?>"></use>
-        </svg> Colors</a></li>
-    <li class="nav-item"><a class="nav-link" href="<?= base_url("typography.html"); ?>">
+        </svg>Server</a></li>
+    <li class="nav-item"><a class="nav-link" href="domain.php">
         <svg class="nav-icon">
           <use xlink:href="<?= base_url("assets/vendors/@coreui/icons/svg/free.svg#cil-pencil") ; ?>"></use>
-        </svg> Typography</a></li>
+        </svg>Domain</a></li>
     <li class="nav-title">Components</li>
     <li class="nav-group"><a class="nav-link nav-group-toggle" href="<?= base_url("#") ; ?>">
         <svg class="nav-icon">
@@ -97,7 +98,7 @@
     <li class="nav-item"><a class="nav-link" href="<?= base_url("widgets.html"); ?>">
         <svg class="nav-icon">
           <use xlink:href="<?= base_url("assets/vendors/@coreui/icons/svg/free.svg#cil-calculator") ; ?>"></use>
-        </svg> Widgets<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+        </svg> Widgets<span class="badge badge-sm bg-info ms-auto"></span></a></li>
     <li class="nav-divider"></li>
     <li class="nav-title">Extras</li>
     <li class="nav-group"><a class="nav-link nav-group-toggle" href="<?= base_url("#") ; ?>">
@@ -377,6 +378,7 @@
 <!-- /.row-->
 </div>
 </div>
+            </body>
 <footer class="footer">
   <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
   <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
